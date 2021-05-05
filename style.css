@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+        url('fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
+        url('fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('fonts/Gilroy-Semibold/Gilroy-Semibold.woff2') format('woff2'),
+        url('fonts/Gilroy-Semibold/Gilroy-Semibold.woff') format('woff'),
+        url('fonts/Gilroy-Semibold/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.main {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background: -webkit-linear-gradient(90deg, rgb(229, 241, 252), rgb(249, 225, 247));
+    background: -moz-linear-gradient(90deg, rgb(229, 241, 252), rgb(249, 225, 247));
+    background: linear-gradient(90deg, rgb(229, 241, 252), rgb(249, 225, 247));
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.textField {
+    border: none;
+    border-bottom: 1px black solid;
+    /* text-decoration: underline; */
+    color: black;
+    font-size: 14px;
+}
+
+.textField:focus-visible {
+    outline: 0;
+}
+
+.textField::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.greenText {
+    color: green;
+}
+
+.redText {
+    color: red;
+}
+
+.menu {
+    background: -webkit-linear-gradient(135deg, rgb(43, 0, 79), rgb(102, 1, 106));
+    background: -moz-linear-gradient(135deg, rgb(43, 0, 79), rgb(102, 1, 106));
+    background: linear-gradient(135deg, rgb(43, 0, 79), rgb(102, 1, 106));
+    height: 100%;
+    padding: 13px 30px 13px 60px;
+    color: #9491b2;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.menu_title {
+    color: white;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.menu_item {
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.menu_item a {
+    color: #9491b2;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu_itemText {
+    margin-left: 14px;
+}
+
+.header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header_sectionTitle {
+    color: #4e4e4e;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Gilroy';
+}
+
+.header_actions {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+
+.header_actions-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_actions-item select {
+    border: none;
+    text-decoration: underline;
+    color: black;
+    font-size: 12px;
+}
+
+
+.header_actions-item label {
+    font-size: 14px;
+}
+
+
+.header_actions-item select:focus-visible {
+    outline: 0;
+}
+
+.section {
+    display: flex;
+    margin: 20px 5px auto;
+}
+
+.section_info {
+    width: 40%;
+}
+
+.card {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 400;
+}
+
+.card table {
+    border-spacing: 10px 5px;
+}
+
+.card td label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card input {
+    width: 210px;
+}
+
+.card_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.card_title {
+    color: #4e4e4e;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 10px;
+    font-family: 'Gilroy';
+}
+
+.card_actions {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card_actions a{
+    text-decoration: none;
+    color: #706e86;
+    margin-right: 10px;
+    font-weight: 600;
+    display: block;
+}
+
+.card_actions a:visited{
+    color: #706e86;
+}
+
+.card_actions a:hover{
+    color: #706e86;
+}
+
+.card_actions button{
+    background-color: #7838a1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.card_actions img{
+   width: 10px;
+   height: 10px;
+   padding-right: 5px;
+}
+
+.card_divider {
+    background-color: #e1e1e1;
+    color: #e1e1e1;
+    border: none;
+    height: 1px;
+}
+
+.card_photo {
+    position: relative;
+    overflow:hidden;
+    border-radius: 8px;
+    width: 145px;
+    height: 75px;
+}
+
+.card_photo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 145px;
+    height: 75px;
+    object-fit: cover;
+ }
+
+ .card_link a{
+     color: #706e86;
+     text-decoration: none;
+     font-weight: 600;
+ }
+
+ .card_link a:visited {
+    color: #706e86;
+}
+
+.card_link a:hover {
+    color: #706e86;
+}
+
+.card_link a:focus {
+    color: #706e86;
+}
+
+.card_barcode {
+    display: flex;
+}
+
+.card_barcodeActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.card_barcodeActions a {
+    display: block;
+    color: #706e86;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card_barcodeActions a:visited {
+    color: #706e86;
+}
+
+.card_barcodeActions a:hover {
+    color: #706e86;
+}
+
+.card_barcodeActions a:focus {
+    color: #706e86;
+}
+
+.card_paymentStatus {
+    font-weight: 600;
+}
+
+.clientTabs {
+    list-style-type: none;
+    margin: 9px 0 8px;
+    padding: 0;
+}
+
+.clientTabs li{
+    display: inline;
+    padding: 9px 35px;
+    margin: 0;
+}
+
+.selectedTab {
+    background: white;
+    border-radius: 6px 6px 0 0;
+}
+
+.clientTabs li>a{
+    text-decoration: none;
+    color: #4e4e4e;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.clientActions_buttons {
+    width: 100%;
+    background: white;
+    border-radius: 0 8px 8px 8px;
+    padding: 14px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clientActions_buttons button{
+    background: white;
+    border: none;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 14px;
+    color: #706e86;
+}
+
+.clientActions_subscriptionFilters {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #706e86
+}
+
+.selectedFilter {
+    color:rgb(43, 0, 79);
+}
+
+.clientActions_subscriptionFilters > div{
+    margin-left: 7px;
+}
+
+.membership_list{
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: black;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+.membership_card {
+    padding: 20px 30px;
+}
+
+.grey_card {
+    background-color: #fbf9fb;
+}
+
+.membership_card_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership_card_body {
+    display: flex;
+}
+
+.membership_card_table {
+    width: 80%;
+}
+
+.membership_card_table table{
+    border-spacing: 0 12px;
+}
+
+.membership_card_actions {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    color:  #706e86;
+    font-weight: 600;
+    font-size: 14px;
+    border-left: 1px solid  #e1e1e1;
+    padding-left: 18px;
+}
+
+.membership_card_actionsItem {
+    cursor: pointer;
+}
+
+.membership_card label {
+    font-size: 14px;
+    font-weight: 400;
+    color:rgb(102, 1, 106);
+}
+
+.membership_card_tableHeader {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.membership_card_tableCell {
+    text-align: center;
+}
+
+.membership_card_payment{
+    font-weight: 600;
+}
+
+.membership_card_course {
+    display: flex;
+    align-items: center;
+}
+
+.membership_card_info {
+    padding-right: 25px;
+    border-right: 1px solid  #e1e1e1;
+}
+
+.membership_card_organization {
+    padding: 0 53px;
+}
+
+.status_circle {
+    background: green;
+    border-radius: 50%; 
+    height: 12px; 
+    width: 12px; 
+    display: inline;
+    margin-right: 5px;
+}
+
+.redCircle{
+    background: red;
+}
+
+.yellowCircle{
+    background: yellow;
+}
+
+ @media (max-width: 1776px) {
+    .card_header{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .card_actions {
+        margin-left: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 5px;
+        width: calc(100%-10px);
+    }
+  }
