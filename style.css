@@ -358,7 +358,7 @@
 }
 
 .selectedFilter {
-    color:rgb(43, 0, 79);
+    color: #8a35a5;
 }
 
 .clientActions_subscriptionFilters > div{
@@ -373,19 +373,22 @@
     font-weight: 400;
     height: 100%;
     width: 100%;
+    padding: 10px 0;
 }
 
 .membership_card {
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 
 .grey_card {
-    background-color: #fbf9fb;
+    background-color: #f4eff5;
 }
 
 .membership_card_header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: fit-content;
 }
 
 .membership_card_body {
@@ -419,7 +422,7 @@
 .membership_card label {
     font-size: 14px;
     font-weight: 400;
-    color:rgb(102, 1, 106);
+    color: #8a35a5;
 }
 
 .membership_card_tableHeader {
@@ -454,8 +457,8 @@
 .status_circle {
     background: green;
     border-radius: 50%; 
-    height: 12px; 
-    width: 12px; 
+    height: 9px; 
+    width: 9px; 
     display: inline;
     margin-right: 5px;
 }
@@ -466,6 +469,39 @@
 
 .yellowCircle{
     background: yellow;
+}
+
+.clientTab_content-active{
+    display: block;
+}
+
+.clientTab_content{
+    display: none;
+}
+
+.task_list {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: black;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.taskTable_button {
+    color:  #706e86;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+}
+
+.task_description {
+    width: 100%;
+    margin-top: 20px;
 }
 
  @media (max-width: 1776px) {

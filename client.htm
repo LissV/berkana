@@ -905,6 +905,10 @@
             src="all.js">
     </script>
 
+    <script type="text/javascript"
+        src="script.js">
+    </script>
+
     
 
     <script type="text/javascript">
@@ -1712,13 +1716,13 @@
             <td valign="top">
                 <div id="clientinfotabs">
                     <ul class="clientTabs">
-                        <li class="selectedTab"><a href="#tabs-subscriptions">Абонементы</a></li>
-                        <li><a href="#tabs-tasks">Задачи</a></li>
+                        <li class="clientTab selectedTab" onclick="changeClientTab(event, 'membershiplist')"><a href="#">Абонементы</a></li>
+                        <li class="clientTab" onclick="changeClientTab(event, 'tasklist')"</li><a href="#tabs-tasks">Задачи</a></li>
                         
-                        <li><a href="#tabs-phonecalls">Звонки</a></li>
+                        <li class="clientTab"><a href="#tabs-phonecalls">Звонки</a></li>
                         
                         
-                        <li><a href="#tabs-gradebook">Дневник</a></li>
+                        <li class="clientTab"><a href="#tabs-gradebook">Дневник</a></li>
                         
                     </ul>
                     <div id="tabs-subscriptions">
@@ -1770,7 +1774,7 @@
                         
 
 
-<div id="div_membershiplist" class="membership_list">
+<div id="membershiplist" class="membership_list clientTab_content-active">
     <div class="membership_card">
         <div class="membership_card_header">
             <div class="membership_card_info">
@@ -2195,7 +2199,95 @@
     </div>
 </div>
 
-    
+
+<div id="tasklist" class="task_list clientTab_content">
+    <div class="membership_card">
+        <div class="membership_card_header">
+            <div class="membership_card_info" style="width: 25%">
+                <div style="margin-bottom: 7px;">
+                    <label>Тип: </label>
+                    <span style="margin-right: 7px;">Тип</span>
+                </div>
+                <div>
+                    <label>Статус:</label>
+                    <span>Статус</span>
+                </div>
+            </div>
+
+            <div style="padding-left: 7px; padding-right: 7px; text-align: center; width: 25%" class="membership_card_info">
+                <div style="margin-bottom: 7px;">
+                    <label>Тема: </label>
+                    <span style="margin-right: 7px;">День рождения</span>
+                </div>
+                <div>
+                    <label>Дата:</label>
+                    <span>01/05/2021</span>
+                </div>
+            </div>
+
+            <div style="padding-left: 7px; padding-right: 7px; width: 25%; text-align: center;" class="membership_card_info">
+                <div style="margin-bottom: 7px;">
+                    <label>Организация: </label>
+                    <span style="margin-right: 7px;">Хогвартс 2</span>
+                </div>
+            </div>
+
+            <div class="taskTable_button">
+                Редактировать
+            </div>
+
+        </div>
+        <div class="membership_card_body">
+            <div class="task_description">
+                Тут должно быть описание события.
+            </div>
+        </div>
+    </div>
+    <div class="membership_card grey_card">
+        <div class="membership_card_header">
+            <div class="membership_card_info" style="width: 25%">
+                <div style="margin-bottom: 7px;">
+                    <label>Тип: </label>
+                    <span style="margin-right: 7px;">Тип</span>
+                </div>
+                <div>
+                    <label>Статус:</label>
+                    <span>Статус</span>
+                </div>
+            </div>
+
+            <div style="padding-left: 7px; padding-right: 7px; text-align: center; width: 25%" class="membership_card_info">
+                <div style="margin-bottom: 7px;">
+                    <label>Тема: </label>
+                    <span style="margin-right: 7px;">День рождения</span>
+                </div>
+                <div>
+                    <label>Дата:</label>
+                    <span>01/05/2021</span>
+                </div>
+            </div>
+
+            <div style="padding-left: 7px; padding-right: 7px; width: 25%; text-align: center;" class="membership_card_info">
+                <div style="margin-bottom: 7px;">
+                    <label>Организация: </label>
+                    <span style="margin-right: 7px;">Хогвартс 2</span>
+                </div>
+            </div>
+
+            <div class="taskTable_button">
+                Редактировать
+            </div>
+
+        </div>
+        <div class="membership_card_body">
+            <div class="task_description">
+                Тут должно быть описание события.
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </div>
                     </div>
 
@@ -5303,7 +5395,7 @@
                 </tr>
                 <tr>
                     <td style="padding-left: 0;">
-<div class="footer">
+<!-- <div class="footer">
     <div class = wrapper">
         <div class="social facebook">
             <a href="https://www.facebook.com/berkanacrm/" target="_blank">
@@ -5332,7 +5424,7 @@
         <p>support@berkanasoft.ru</p>
         <p>Все права защищены и принадлежат ООО "Берканасофт" © Работаем с 2013 </p>
     </div>
-</div>
+</div> -->
 </div></td>
                 </tr>
             </table>
